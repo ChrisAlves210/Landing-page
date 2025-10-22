@@ -12,16 +12,46 @@ body {
   color: white;
 }
 
+/* Navbar brand image sizing */
+.navbar-brand-img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 4px; 
+}
+
 .hero-background-img {
   background-image: url("img/tokyo-street.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top:200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-background-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+  padding-top:200px;  
   padding-bottom:200px;
 }
 
-/* Temporary test image (remove once local file is added) */
+.hero-background-img:after {
+  content: "";
+  position: absolute;
+  background-image: url("img/tokyo-street.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5; 
+}
+
+
 .hero-test-img {
   background-image: url("https://picsum.photos/1600/600?random=12");
 }
