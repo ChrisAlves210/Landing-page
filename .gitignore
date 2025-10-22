@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node (not used now, safe to ignore if added later)
+node_modules/
+
+# Python server cache (if any)
+__pycache__/

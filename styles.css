@@ -1,0 +1,27 @@
+body {
+  color: burlywood;
+}
+
+/*this fixed my problem with navbar color*/
+.navbar.bg-light {
+  background-color: aquamarine !important;
+}
+
+.btn-primary:hover {
+  background-color: red;
+  color: white;
+}
+
+.hero-background-img {
+  background-image: url("img/tokyo-street.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top:200px;
+  padding-bottom:200px;
+}
+
+/* Temporary test image (remove once local file is added) */
+.hero-test-img {
+  background-image: url("https://picsum.photos/1600/600?random=12");
+}
